@@ -11,6 +11,7 @@ function onForSubmit(event) {
     const delay = +event.currentTarget.elements.delay.value;
     const btnRadio = event.currentTarget.elements.state.value;
 
+
     createPromise(btnRadio, delay)
         .then(res => {
             iziToast.success({
